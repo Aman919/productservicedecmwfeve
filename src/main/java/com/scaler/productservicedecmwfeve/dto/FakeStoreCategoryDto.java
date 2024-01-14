@@ -5,9 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class ExceptionDto {
-    private String message;
-    private String detail;
+public class FakeStoreCategoryDto {
+    private Long id;
+    private String name;
 }
-
-

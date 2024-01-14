@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public class Category {
 
-    //All attibutes of an entry should be private
+    //All attibutes of an entity should be private
 
     private Long id;
     private String name;

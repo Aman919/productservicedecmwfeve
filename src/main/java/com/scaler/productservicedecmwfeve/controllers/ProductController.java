@@ -3,7 +3,6 @@ package com.scaler.productservicedecmwfeve.controllers;
 import com.scaler.productservicedecmwfeve.exceptions.ProductNotExistException;
 import com.scaler.productservicedecmwfeve.models.Product;
 import com.scaler.productservicedecmwfeve.services.ProductService;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
