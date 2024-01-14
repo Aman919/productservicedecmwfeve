@@ -8,7 +8,7 @@ import lombok.Setter;
 public class Category {
 
     //All attibutes of an entry should be private
-    
-private Long id;
-private String name;
+
+    private Long id;
+    private String name;
 }

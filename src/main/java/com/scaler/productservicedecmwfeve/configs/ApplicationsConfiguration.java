@@ -10,7 +10,7 @@ public class ApplicationsConfiguration {
 
 
     @Bean
-    public RestTemplate createRestTemplate(){
+    public RestTemplate createRestTemplate() {
         return new RestTemplateBuilder().build();
     }
 }

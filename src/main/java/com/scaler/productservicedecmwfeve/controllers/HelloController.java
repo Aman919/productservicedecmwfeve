@@ -14,11 +14,11 @@ public class HelloController {
     //something in curly braces becomes a variable as like name in Getmapping
     @GetMapping("/say/{name}/{times}")
     public String sayHello(@PathVariable("name") String name,
-                           @PathVariable("times") int times){
+                           @PathVariable("times") int times) {
         String answer = "";
-        for (int i=0; i<times; i++){
-        answer += "Hello "+ name;
-        answer += "<br />";
+        for (int i = 0; i < times; i++) {
+            answer += "Hello " + name;
+            answer += "<br />";
         }
         return answer;
     }
