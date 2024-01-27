@@ -15,7 +15,7 @@ public class Product extends BaseModel{
 //    now we will put all the common attributes in the parent class i.e. BaseModel
     //id has to be long not int which stores 10^9 while the latter stores 10^18
     private String title;
-    private double price;
+    private Double price;
     @ManyToOne
     private Category category;
     private String description;

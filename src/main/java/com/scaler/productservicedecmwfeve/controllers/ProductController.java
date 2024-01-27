@@ -4,6 +4,7 @@ import com.scaler.productservicedecmwfeve.exceptions.ProductNotExistException;
 import com.scaler.productservicedecmwfeve.models.Product;
 import com.scaler.productservicedecmwfeve.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +21,7 @@ public class ProductController {
     private ProductService productService;
 
     @Autowired
-    public ProductController(ProductService productService) {
+    public ProductController(@Qualifier("selfProductService") ProductService productService) {
         //here we are using dependency injection
         this.productService = productService;
     }
@@ -54,7 +55,9 @@ public class ProductController {
 
     @PostMapping()
     public Product addNewProduct(@RequestBody Product product) {
+
         return productService.addNewProduct(product);
+        //it will return the saved product with an id
     }
 
     @PatchMapping("/{id}")
